@@ -1,6 +1,6 @@
 <md-sidenav-container class="example-container">
   <md-sidenav #sidenav  mode="side" opened="true" class="example-sidenav">
-      <md-radio-group [(ngModel)]="align">
+      <md-radio-group [(ngModel)]="animation">
         <div>
           <md-radio-button class="padding" value="start">Start</md-radio-button>          
         </div>
@@ -8,11 +8,10 @@
           <md-radio-button class="padding" value="wobble">End</md-radio-button>          
         </div>
       </md-radio-group>
-    
   </md-sidenav>
 
-  <div [@align] class="example-sidenav-content">
-   {{align}}
+  <div [@animation] class="example-sidenav-content">
+   {{animation}}
   </div>
 
 </md-sidenav-container>
